@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		
+		<title>체크박스와 라이오버튼 만들기</title>
+		
+		<style type="text/css">
+			<!-- 리스트 블릿 기호 없애기 -->
+			ul {list-style:none;}
+			li {margin:20px;}
+		</style>
+	</head>
+
+	<body>
+		<!-- 결정이 안되면 #씀 -->
+		<form action="#" method="post">
+			<h3>수강분야(복수선택가능)</h3>
+			
+			<!-- ul>li>input:checkbox*3 -->
+			<ul>
+				<!-- checkbox는 중복선택 가능 네모버튼 -->
+				<!-- value 값 = 체크시 서버 DB에 저장되는 값-->
+				<!-- for속성과 id속성 -->
+				<!-- id는 두번 못씀 -->
+				<!-- label은 스크린리더기한테 input요소를 알려줌, 쉽게 선택할 수 있도록 영역확장-->
+				<!-- name과 value값은 꼭 넣어야 됨. -->
+				<li><label for="ch1">문법</label><input type="checkbox" id="ch1" value="grm"/></li>
+				<li><label for="ch2">작문</label><input type="checkbox" id="ch2" value="wr"/></li>
+				<li><label for="ch3">독해</label><input type="checkbox" id="ch3" value="rd"/></li>
+				
+			</ul>
+			
+			<h3>수강과목(1과목만 선택가능)</h3>
+			<!-- 라디오버튼은 하나만 선택가능 동그라미버튼 -->
+			<!-- label tag 글씨를 선택 가능 -->
+			<!-- ul>(li>label>input:radio)*3 -->
+			<!-- name,id 차이 -->
+			<!-- name: DB에서 사용할 필드명 ID 백엔드용-->
+			<!-- id: 디자이너가 사용할 필드명 ex)css에서 사용 프론트엔드용-->
+			<ul>
+				<li><label><input type="radio" name="subject" />영어</label></li>
+				<li><label><input type="radio" name="subject" />중국어</label></li>
+				<li><label><input type="radio" name="subject" />일어</label></li>
+			</ul>
+				
+		</form>
+		
+	</body>
+</html>

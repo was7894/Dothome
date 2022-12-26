@@ -1,0 +1,38 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+
+.header {
+  text-align: center;
+  background-color: #ffc2c2;
+  height: 145px;
+  border-bottom:2px solid gray;
+}
+
+.header__logo h1 {
+  padding-top: 15px;
+  letter-spacing: 2px;
+  font: bold 40px "arial";
+}
+.header__logo p {
+  font: bold 4px "arial";
+  letter-spacing: 2px;
+}
+
+.header__gnb ul {
+  margin-top: 30px;
+  display:flex;
+  justify-content: center;
+}
+
+.header__gnb li a {
+  padding: 0 16px;
+  font: bold 14px 'arial';
+  color:gray;
+  
+}

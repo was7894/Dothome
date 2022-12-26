@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css" />
+    <style>
+      body {
+        background-color: #c8e6c9;
+      }
+      .wrap {
+        /* wrap가운데 정렬하기위해 margin값을 왼오 auto로 줌 */
+        margin: 50px auto;
+        width: 1000px;
+        height: 900px;
+        text-align: center;
+        font-size: 50px;
+        color: white;
+        /* background-color: #c8e6c9; */
+      }
+      header {
+        background-color: #a3baa4;
+        height: 100px;
+      }
+      nav {
+        background-color: #6f7d68;
+        height: 100px;
+      }
+      aside {
+        background-color: #414b3c;
+        height: 600px;
+        width: 200px;
+      }
+      article {
+        background-color: #508137;
+        height: 600px;
+        width: 800px;
+      }
+      footer {
+        background-color: black;
+
+        height: 100px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <header>header</header>
+      <nav>nav</nav>
+      <section class="cf">
+        <aside class="fl">aside</aside>
+        <article class="fl">article</article>
+      </section>
+      <footer>footer</footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        list-style: none;
+      }
+      /* 인라인요소로만들어 가로배치 */
+      ul > li {
+        display: inline-block;
+
+        padding: 10px 15px;
+        margin-right: 20px;
+      }
+
+      /* 2depth요소 숨김 */
+      ul li ul {
+        display: none;
+      }
+
+      /* 마우스 hover시 2depth 메뉴 나타냄 block시 아래에서 떨어짐 */
+      ul li:hover ul {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>
+        <a href="#">애완견 종류</a>
+        <ul>
+          <li><a href="#">말티즈</a></li>
+          <li><a href="#">요키</a></li>
+          <li><a href="#">포메</a></li>
+          <li><a href="#">스피츠</a></li>
+        </ul>
+      </li>
+
+      <li>입양하기</li>
+      <li>건강돌보기</li>
+      <li>더불어살기</li>
+    </ul>
+  </body>
+</html>

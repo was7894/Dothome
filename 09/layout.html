@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./reset.css" />
+
+    <style>
+      body {
+        background-color: orange;
+      }
+      #wrap {
+        /* 높이는 가변적으로 변해야되기때문에 나중에 컨텐츠 추가할땐 빼야됨 */
+        height: 900px;
+        width: 1000px;
+        margin: auto;
+        color: white;
+        font-size: 40px;
+        text-align: center;
+      }
+      header {
+        width: 1000px;
+        height: 100px;
+        background-color: mediumseagreen;
+      }
+      nav {
+        width: 1000px;
+        height: 100px;
+        background-color: rgb(117, 172, 142);
+      }
+      aside {
+        width: 300px;
+        height: 600px;
+        background-color: rgb(255, 94, 0);
+      }
+      article {
+        width: 800px;
+        height: 600px;
+        background-color: rgb(156, 221, 94);
+      }
+      footer {
+        width: 1000px;
+        height: 100px;
+      }
+      /* 형제선택자 */
+      .cf > .fl {
+        width: 300px;
+        height: 600px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <header>header</header>
+      <nav>nav</nav>
+      <div class="cf">
+        <aside class="fl">side</aside>
+        <article class="fl">content</article>
+        <article class="fl">content</article>
+      </div>
+      <footer>footer</footer>
+    </div>
+  </body>
+</html>

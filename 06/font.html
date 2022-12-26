@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <title>폰트</title>
+    <style>
+      /* serif,sans-serif 글꼴이 아님  */
+
+      #box1 h2 {
+        /* serif 삐침이 있는 명조, sans-serif는 고딕 */
+        /* 글꼴 값을 여러개 지정하여 적용 우선순위 선언*/
+        /* 글꼴이름에 특수문자가 있을경우 "" */
+        font-family: "Times New Roman", Arial, "돋움", serif;
+        font-size: 2em;
+        font-weight: normal;
+      }
+
+      #box1 p {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      #box2 h2 {
+        font-style: italic;
+        color: red;
+      }
+
+      #box2 p {
+        font-variant: small-caps;
+        color: rgb(74, 89, 172);
+      }
+
+      #box3 h2 {
+        /* 축약속성 순서 : 스타일, 크기, 줄 간격, 글꼴 */
+        font: 3em Aria;
+      }
+
+      #box3 p {
+        font: small-caps 30px "Times New Roman", serif;
+      }
+
+      #box3 p.text {
+        /* 슬래시는 줄간격 */
+        font: italic 12px/24px 돋움;
+      }
+      #box3 p.test {
+        /* 캡션에 어울리는 글꼴 */
+        font: caption;
+        font: icon;
+        font: menu;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box1">
+      <h2>font-family, font-size, font-weight</h2>
+      <p>Well done is better than well said.</p>
+    </div>
+    <div id="box2">
+      <h2>font-style, font-variant, color</h2>
+      <p>Seeing much, suffering much, and studying much, are the three pillars of learning.</p>
+    </div>
+    <div id="box3">
+      <h2>font</h2>
+      <p>Education is a progressive discovery of our own ignorance.</p>
+      <p class="txt">여러 요소가 함께 사용된 웹 문서 안에서 텍스트가 눈에 띄게 하려면 내용에 맞는 글꼴과 글자 크기, 그리고 글자색을 선택하는 것이 중요합니다.</p>
+      <p class="test">이럴 때 사용할 수 있는 것이 글꼴 속성입니다.</p>
+      <p style="font: caption">[font:caption] 캡션에 어울리는 글꼴 스타일</p>
+      <p style="font: icon">[font:icon] 아이콘에 어울리는 글꼴 스타일</p>
+      <p style="font: menu">[font:menu] 드롭다운 메뉴에 어울리는 글꼴 스타일</p>
+      <p style="font: message-box">[font:message-box] 대화 상자에 어울리는 글꼴 스타일</p>
+      <p style="font: small-caption">[font:small-caption] 작은 캡션에 어울리는 글꼴 스타일</p>
+      <p style="font: status-bar">[font:status-bar] 상태표시줄에 어울리는 글꼴 스타일</p>
+    </div>
+  </body>
+</html>

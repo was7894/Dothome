@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <title>2단 레이아웃</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="2-layout.css" />
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <!-- 모든웹페이지는 하나정도는 h1이 들어가야되어요. -->
+        <h1>Logo</h1>
+      </header>
+
+      <!-- 옆으로붙여야되는거 fl클래스로 이름쓴다음 부모한테 cf를 붙임 -->
+      <main class="cf">
+        <article class="fl">
+          <h2>article</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt reprehenderit illum deleniti quia facilis officia maxime iure voluptatum molestias, aut, beatae iste dolor voluptatem ad, incidunt sequi nam quo eos!</p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur labore nobis eius accusamus? Expedita repellat quae molestias neque, eum illum qui. Minus beatae molestias, porro eveniet et perferendis sint doloremque.</p>
+        </article>
+
+        <aside class="fl">
+          <h2>aside</h2>
+          <ul>
+            <li>Lorem ipsum dolor sit amet,</li>
+          </ul>
+        </aside>
+      </main>
+
+      <footer>
+        <h2>footer</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, quis! Totam ad porro maxime iure provident voluptatum esse dignissimos</p>
+      </footer>
+    </div>
+  </body>
+</html>

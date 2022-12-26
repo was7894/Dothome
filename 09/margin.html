@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <title>마진병합현상과 box-sizing</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      div {
+        width: 200px;
+        height: 100px;
+        background: blue;
+      }
+
+      .box1 {
+        /* width:220 height:120 */
+        border: 10px solid;
+        border-width: 5px;
+        /* 축약형 */
+        border: 1px 3px 10px 5px;
+        border-style: dashed;
+        border-top-style: dashed;
+        border-right-style: double;
+        border-bottom-style: none;
+        border-left-style: dotted;
+
+        /* 속성 none줄때 박스크기 변하니까 투명으로 대체 */
+        /* raga 0 0 0 0; or transparent */
+        border-color: red;
+        border-top-color: black;
+        border-right-color: green;
+        border-bottom-color: #ffc2c2;
+        border-left-color: rgb(255, 255, 255);
+
+        width: 180px;
+        height: 80px;
+      }
+
+      .box2 {
+        background: yellow;
+        padding: 10px;
+        padding: 20px 10px;
+        padding-right: 10px;
+
+        padding-left: 10px;
+        /* 세개 값만 줬을때 위 오/왼 아래*/
+        padding: 50px 10px 5px;
+      }
+
+      /* 마진은 박스 바깥쪽여백이라 크기 영향을 안준다 */
+      .box3 {
+        background-color: aquamarine;
+        margin: 10px;
+      }
+
+      /* 마진병합현상 */
+      .box1 {
+        margin: 40px;
+        display: inline-block;
+      }
+
+      /* 2,3 은 배치공간이 달라서 적용x */
+      .box2 {
+        margin: 40px;
+        display: inline-block;
+      }
+
+      /* 3,4마진 합이 160이 되어야되는데 안된다 왜죠?
+			 마진은 상하방향으로 큰거따라 병합된다.
+			 아래는 결론으로 100px로 적용된다..*/
+      .box3 {
+        margin: 100px;
+      }
+
+      /* 병합현상 막으려면 그냥 위나 아래 둘중 하나만 계속줘라 상하방향의 마진은 병합된다.
+			한쪽방향만 마진을 주세요.. */
+      /* 부모 자식간의 병합 */
+      /* box>div:  box div: */
+
+      .box4,
+      .box4 div {
+        width: 200px;
+        height: 200px;
+      }
+
+      .box4 div.child {
+        height: 100px;
+        background-color: blue;
+      }
+      .box4 div.grandchild {
+        height: 40px;
+        background-color: yellow;
+      }
+      .box4 {
+        margin: 20px 0;
+        background-color: #ffc2c2;
+      }
+      .box5 {
+        background-color: antiquewhite;
+        margin-bottom: 100px;
+        border: 10px solid;
+        padding: 20px;
+        box-sizing: content-box;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1">b1</div>
+    <div class="box2">b2</div>
+    <div class="box3">b3</div>
+
+    <div class="box4 parent">
+      <div class="child">
+        <div class="grandchild"><span>b4</span></div>
+      </div>
+      <div class="box5">b5</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 배경색 */
+      #wrap,
+      #wrap1 {
+        width: 500px;
+        background: yellow;
+        margin-bottom: 100px;
+      }
+
+      #header,
+      header {
+        width: 500px;
+        background: rgb(226, 132, 24);
+      }
+      /* 3개더한값이 500보다 크면안됨 */
+      #sidebar,
+      aside {
+        width: 100px;
+        background: rgb(65, 119, 189);
+        float: left;
+      }
+      #contents,
+      section {
+        width: 300px;
+        background: rgb(206, 58, 211);
+        float: left;
+      }
+      #sidebar_ad,
+      aside.ad {
+        width: 100px;
+        background: rgb(64, 161, 85);
+        float: left;
+      }
+
+      #footer,
+      footer {
+        width: 500px;
+        background: rgb(242, 245, 66);
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- 시맨틱태그 =  해더, 섹션, 어사이드, 풋터 한번찾아보기. 
+      nav=메인메뉴 figure, figcaption으로 묶어라-->
+    <!-- #wrap>#header+#sidebar+#contents+#sidebar_ad+#footer -->
+    <div id="wrap">
+      <div id="header">header</div>
+      <div id="sidebar">sidebar</div>
+      <div id="contents">contents</div>
+      <div id="sidebar_ad">sidebar_ad</div>
+      <div id="footer">footer</div>
+    </div>
+
+    <div id="wrap1">
+      <header>header</header>
+      <aside>sidebar</aside>
+      <section>contents</section>
+      <aside class="ad">sidebar_ad</aside>
+      <footer>footer</footer>
+    </div>
+  </body>
+</html>

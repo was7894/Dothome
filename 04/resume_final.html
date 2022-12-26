@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>긤힁싑 이력서 표만들기</title>
+    <style type="text/css">
+      body {
+        margin: 50px 300px;
+      }
+
+      /*바깥테두리*/
+      table {
+        border: 5px solid #ff9800;
+        border-collapse: collapse;
+      }
+      /*안쪽테두리*/
+      th,
+      td {
+        border: 2px solid #ddd;
+        padding: 10px;
+        height: 15px;
+        width: 100px;
+      }
+
+      .w70 {
+        width: 70px;
+      }
+      .w35 {
+        width: 35px;
+      }
+      .w140 {
+        width: 140px;
+      }
+      .w190 {
+        width: 190px;
+      }
+      .h150 {
+        height: 150px;
+      }
+      .center {
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- tip)1. 총 행과 열 개수 쪼개고 행개수만큼 hr부터 다 만들어버리기.
+			 2. 위 순서대로 th, td 위에서부터 넣기
+			 3. 차례대로 병합-->
+    <table>
+      <tr>
+        <th rowspan="4" colspan="3" calss="w140">사진</th>
+        <th colspan="4">이력서</th>
+      </tr>
+
+      <tr>
+        <th rowspan="2">성명</th>
+        <td rowspan="2"  colspan="2">xxx(인)</td>
+        <th colspan="2">주민등록번호</th>
+      </tr>
+
+      <tr>
+        <td colspan="2" class="center">840xxx-********</td>
+      </tr>
+
+      <tr>
+        <th>생년월일</th>
+        <td colspan="3" class="center">19xx년 x월 xx일생 (만xx세)</td>
+      </tr>
+
+      <tr>
+        <th colspan="3" calss="w140">주소</th>
+        <td colspan="4">경기도 남양주시 녹촌로 20</td>
+      </tr>
+
+      <tr>
+        <th colspan="3" calss="w140">호적관계</th>
+        <th class="w190">호주와의관계</th>
+        <td class="w190 center">손태웅의 자</td>
+        <th class="w190">호주성명</th>
+        <td class="w190 center">손흥민</td>
+      </tr>
+
+      <tr>
+        <th colspan="3" calss="w140">년 월 일</th>
+        <th colspan="3">학 력 및 경 력 사 항</th>
+        <th>발 령 청</th>
+      </tr>
+
+      <tr>
+        <td class="w70 center">2002</td>
+        <td class="w35 center">02</td>
+        <td class="w35 center">14</td>
+        <td colspan="3">졸업</td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td class="w70 center">2002</td>
+        <td class="w35 center">05</td>
+        <td class="w35 center">00</td>
+        <td colspan="3">퇴사</td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td class="w70 center">2004</td>
+        <td class="w35 center">05</td>
+        <td class="w35 center">00</td>
+        <td colspan="3">퇴사</td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td class="w70 center">2007</td>
+        <td class="w35 center">08</td>
+        <td class="w35 center">00</td>
+        <td colspan="3">퇴사</td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td class="w70 center"></td>
+        <td class="w35 center"></td>
+        <td class="w35 center"></td>
+        <td colspan="3"></td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td class="w70 center"></td>
+        <td class="w35 center"></td>
+        <td class="w35 center"></td>
+        <th colspan="3">◆ 자 격 사 항 ◆</th>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td class="w70 center">2007</td>
+        <td class="w35 center">08</td>
+        <td class="w35 center">00</td>
+        <td colspan="3">기능사 취득</td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td class="w70 center">2009</td>
+        <td class="w35 center">10</td>
+        <td class="w35 center">09</td>
+        <td colspan="3">1차합격</td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td class="w70 center">2001</td>
+        <td class="w35 center">05</td>
+        <td class="w35 center">17</td>
+        <td colspan="3">2급 취득</td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td class="w70 center">2000</td>
+        <td class="w35 center">01</td>
+        <td class="w35 center">11</td>
+        <td colspan="3">취득</td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td class="w70 center">2000</td>
+        <td class="w35 center">02</td>
+        <td class="w35 center">11</td>
+        <td colspan="3">취득</td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td class="w70 center">2000</td>
+        <td class="w35 center">12</td>
+        <td class="w35 center">29</td>
+        <td colspan="3">취득</td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td class="w70 center">1999</td>
+        <td class="w35 center">08</td>
+        <td class="w35 center">13</td>
+        <td colspan="3">취득</td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td class="w70 center"></td>
+        <td class="w35 center"></td>
+        <td class="w35 center"></td>
+        <td colspan="3"></td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td class="w70 center"></td>
+        <td class="w35 center"></td>
+        <td class="w35 center"></td>
+        <td colspan="3"></td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td class="w70 center"></td>
+        <td class="w35 center"></td>
+        <td class="w35 center"></td>
+        <td colspan="3"></td>
+        <td></td>
+      </tr>
+
+      <footer>
+        <tr>
+          <th colspan="7" class="h150 center">위 사항은 사실과 틀림 없음을 증명합니다. <br />김형섭(인)</th>
+        </tr>
+      </footer>
+    </table>
+  </body>
+</html>

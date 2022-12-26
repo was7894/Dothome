@@ -1,0 +1,9 @@
+@font-face {
+  /* 폰트패밀리는 폰트이름 */
+  font-family: 'trana';
+  /* 폰트파일 경로, 파일형식 */
+ 
+  src: url(./trana.eot?#iefix) format(embedded-opentype), url(./trana.ttf) format(true-type);
+  
+  /* src: url("./trana.eot?#iefix") format("embeded-opentype"), url("./trana.ttf") format("true-type"); */
+}

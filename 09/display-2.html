@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <title>display 속성</title>
+    <style>
+      ul {
+        list-style: none;
+      }
+      ul a {
+        text-decoration: none;
+        color: black;
+      }
+      ul li {
+        /* 크기가지고 세로로 떨어짐 */
+        display: block;
+
+        /* 크기못가지고 가로배치*/
+        display: inline;
+
+        /* 크기도 가지면서 가로배치 */
+        display: inline-block;
+        /* 안보임 */
+        display: none;
+
+        padding: 10px 15px;
+        margin-right: 20px;
+        border-top: 3px solid #222;
+      }
+      ul li ul {
+        display: none;
+      }
+
+      ul li:hover {
+        background-color: rgb(196, 196, 196);
+      }
+      ul li:hover ul {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <!-- a태그 밖에다가 댑스만들어라 -->
+        <li><a href="#">애완견 종류</a></li>
+        <!-- <ul>
+          <li><a href="#">말티즈</a></li>
+          <li><a href="#">요키</a></li>
+          <li><a href="#">포메</a></li>
+          <li><a href="#">스피츠</a></li>
+        </ul> -->
+        <li><a href="#">입양하기</a></li>
+        <li><a href="#">건강돌보기</a></li>
+        <li><a href="#">더불어살기</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>

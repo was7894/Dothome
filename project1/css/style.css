@@ -1,0 +1,114 @@
+@charset "UTF-8";
+/* layout */
+
+[class*="_cover"] { width: 100%; max-width: 1400px; margin: auto; } 
+/* 컨텐츠 넣으면 뺄예정 */
+[class*="_cover"] { height: inherit; } 
+
+
+
+/* header */
+#header{
+  width: 100%;
+  /* 피그마에서 높이 확인 */
+  height: 90px;
+  position: relative;
+  font-size: 1.3rem;
+  background: #fff;
+}
+ 
+/* 같은형제요소는 width합한게 100%넘으면 안됨 */
+        .logo{
+          /* w140px */
+          width: 10%;
+          /* h90px */
+          height: 100%;
+        }
+
+        .logo a{
+          display:block;
+          width: 100%;
+          height: 100%;
+          
+        }
+
+        .logo a img{
+          width: 80%;
+          display: block;
+          margin: auto;
+          padding-top: 17px;
+        }
+
+
+
+#header .nav{
+  width: 50%;
+  margin: 0 10%;
+  display:flex;
+}
+        .nav li{
+          width:20%;
+          text-align: center;
+          line-height: 90px;
+        }
+        .nav a{
+          display:block;
+          width:100%;
+          height: 100%;
+          color:black;
+          font-weight: 700px;
+          position: relative;
+          /* a태그 확인 컬러 */
+          /* background-color: blueviolet; */
+        }
+
+        /* 가상선택자로 depth만들려고 */
+        .nav a::before{
+          content:"";
+          display:block;
+          color:black;
+          background-color: blueviolet;
+          height: 2px;
+          width:0%;
+          bottom:0;
+          font-weight: 700px;
+          position: absolute;
+          /* a태그 확인 컬러 */
+          /* left:0; */
+          /* 호버시 스르르 시간 마우스올리기전부터 주어야 사라질때도 효과됨*/
+          /* transition: width 0.5s; */
+        }
+
+        .nav a:hover::before{
+          /* 여기서 트랜지션주면 되돌아오지않음  */
+          width:100%;
+          
+        }
+
+
+#header .gnb{
+  display:flex;
+  /* 크기늘리면 헤더nav도 조정해야됨 */
+  width: 20%;
+}
+        .gnb li{
+          font-size:1.4rem;
+          width: 100%;
+        }
+        .gnb li:nth-child(1) a{
+          background: url(../images/ico_lang.png) no-repeat 0 50% / 30%;
+        }
+        .gnb li a{
+          display:block;
+          width: 100%;
+          height: 100%;
+          line-height: 90px;
+          text-align: center;
+          color:#000;
+        }
+        .gnb li a img{
+          /* 이미지크기조정시 너비나 높이 하나만 써라 */
+          width: 40px;
+          /* 수직 중앙 정렬 */
+          vertical-align: middle;
+        }

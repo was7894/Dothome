@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>submit-reset.html 온클릭안 함수.</title>
+</head>
+<body>
+		<h3>메일링 리스트 등록</h3>
+		<form action="#" method="post">
+			
+			<label >
+				메일주소<input type="text"/>
+			</label>
+			
+			<!-- submit type -->
+			<input type="submit" value="제출"/>
+			
+			<!-- reset type 버튼누르면 지워짐 -->
+			<input type="reset" value="다시입력"/>
+			
+			<!-- search type 창안에 리셋 x버튼이 생김 -->
+			<input type="search" value="검색"/>
+			
+			<hr/>
+			
+			<!-- button type 2가지 헷갈리면 그냥 버튼태그 써라. -->
+			
+			<p>	<!-- 개발자모드 콘솔 window검색 -->
+				<!-- window.open() = 새창열기 -->
+				<input type="button" value="새탭열기" onclick="window.open()"/>
+				<br/>
+				<br/>
+				<input type="file" />
+				<br/>
+				<br/>
+				<!-- 복잡해서 새로생긴 태그임 -->
+				<!-- mypop.html연동 -->
+				<!-- #########주의######## -->
+				<!-- 큰따옴표안 매개변수는 작은따옴표로.. -->
+				<button onclick=" window.open('./mypop.html','NewEvent','width=500, height=600') ">
+					팝업 열기
+				</button>
+			</p>
+		</form>
+	</body>
+</html>

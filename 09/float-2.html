@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <title>박스모델</title>
+    <style>
+      /* 1.clear 속성을 쓴다 */
+      .box1 {
+        padding: 20px;
+        margin-right: 33%;
+        background-color: rgba(169, 233, 169, 0.7);
+        float: left;
+      }
+      /* 박스 중간에 옮기려면 어떻게 할까요 */
+      .box2 {
+        padding: 20px;
+        margin-right: 10px;
+        background-color: rgb(230, 230, 130, 0.5);
+        float: left;
+        margin: 0 auto;
+      }
+      .box3 {
+        padding: 20px;
+        margin-right: 10px;
+        color: white;
+        background-color: rgb(63, 63, 60);
+        float: right;
+      }
+      .box4 {
+        /* float해제 */
+        clear: both;
+        padding: 20px;
+        background-color: rgb(70, 89, 199);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1">박스1</div>
+    <div class="box2">박스2</div>
+    <div class="box3">박스3</div>
+    <div class="box4">박스4</div>
+  </body>
+</html>

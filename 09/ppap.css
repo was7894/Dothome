@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+#wrap {
+  width: 100%;
+  height: 4193.15;
+
+  background-color: #7a5709;
+}
+
+/* #wrap > div {
+} */
+
+.util_wrap {
+  width: 100%;
+  background-color: #fff9d6;
+  height: 50px;
+}
+
+.header_wrap {
+  width: 100%;
+  background-color: #fff2ad;
+  height: 120px;
+}
+
+.section1_wrap {
+  width: 100%;
+  background-color: #ffe983;
+  height: 830px;
+}
+
+.section2_wrap {
+  width: 100%;
+  background-color: #ffe065;
+  height: 877px;
+}
+
+.section3_wrap {
+  width: 100%;
+  background-color: #ffd232;
+  height: 910px;
+}
+
+.section4_wrap {
+  width: 100%;
+  background-color: #dbaf24;
+  height: 225px;
+}
+
+.section5_wrap {
+  width: 100%;
+  background-color: #b78d19;
+  height: 937px;
+}
+
+.footer_wrap {
+  width: 100%;
+  background-color: #936d0f;
+  height: 244.15px;
+}
+
+/*  */
+.inner {
+  /* 부모요소에 높이값이 있으면 부모의 높이값을 받아옴 */
+
+  /* 가변적으로 쓰려고 */
+  width: 100%;
+
+  /* 1200이상 안커지게 */
+  max-width:1200px;
+  
+  height: inherit;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
+  font-size: 30px;
+}

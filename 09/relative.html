@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <title>CSS 포지셔닝</title>
+    <link rel="stylesheet" href="reset.css" />
+    <style>
+      /* positioning
+      1)static: 비활성화 값을 줘도 안움직임. (기본값) ,top, left, bottom, right 지정못함(단 float속성은 가능!)
+      2)relative : 자기위치(static)기준으로 움직임
+      3)absolute : 없는자식취급 집밖으로 나가서 기준으로됨
+       but 내가 담겨있는 상자부모요소 또는 조상요소중 relative이면 그기준으로 움직임
+      4)fixed : 담겨있는상자무시하고 페이지상(브라우저창기준)에서 움직임 스크롤해도 고정표시됨
+      5)sticky : 
+      */
+
+      .wrap {
+        margin: 30px auto;
+        border: 3px solid blue;
+        width: 1000px;
+        height: 1800px;
+      }
+      div {
+        width: 300px;
+        height: 200px;
+      }
+
+      /* static */
+      .box1 {
+        background-color: rgba(219, 139, 139, 0.4);
+        position: static;
+      }
+
+      /* relative */
+      .box2 {
+        background-color: rgb(46, 221, 99);
+
+        position: relative;
+        /* 조심할점.. 값을 줄수록 이름과 달리 방향은 반대로 움직임.. */
+        left: 300px;
+        /* 주의) 부모요소가 relative이면 부모기준으로 따른다. */
+        top: 0;
+      }
+
+      /* absolute */
+      .box3 {
+        background-color: aquamarine;
+        position: absolute;
+        top: 0;
+        left: 0px;
+      }
+
+      /* fixed */
+      .box4 {
+        background-color: brown;
+        position: fixed;
+        top: 200px;
+        left: 200px;
+        font-size: 40px;
+      }
+      .box4 a {
+        color: aliceblue;
+      }
+
+      .box5 {
+        background-color: rgb(216, 62, 208);
+        position: sticky;
+        top: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="box1">static</div>
+      <div class="box2">relative</div>
+      <div class="box3">absolute</div>
+      <div class="box4"><a href="#">fixed(click)</a></div>
+      <div class="box5">sticky</div>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi veniam ut molestiae, fugiat minus, odit, dignissimos suscipit voluptas quasi tenetur architecto ipsa veritatis nam? Nisi exercitationem nobis tempore perspiciatis similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi veniam ut molestiae, fugiat minus, odit, dignissimos suscipit voluptas quasi tenetur architecto ipsa veritatis nam? Nisi exercitationem nobis tempore perspiciatis similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi veniam ut molestiae, fugiat minus, odit, dignissimos suscipit voluptas quasi tenetur architecto ipsa veritatis nam? Nisi exercitationem nobis tempore perspiciatis similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi veniam ut molestiae, fugiat minus, odit, dignissimos suscipit voluptas quasi tenetur architecto ipsa veritatis nam? Nisi exercitationem nobis tempore perspiciatis similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi veniam ut molestiae, fugiat minus, odit, dignissimos suscipit voluptas quasi tenetur architecto ipsa veritatis nam? Nisi exercitationem nobis tempore perspiciatis similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi veniam ut molestiae, fugiat minus, odit, dignissimos suscipit voluptas quasi tenetur architecto ipsa veritatis nam? Nisi exercitationem nobis tempore perspiciatis similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi veniam ut molestiae, fugiat minus, odit, dignissimos suscipit voluptas quasi tenetur architecto ipsa veritatis nam? Nisi exercitationem nobis tempore perspiciatis similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi veniam ut molestiae, fugiat minus, odit, dignissimos suscipit voluptas quasi tenetur architecto ipsa veritatis nam? Nisi exercitationem nobis tempore perspiciatis similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi veniam ut molestiae, fugiat minus, odit, dignissimos suscipit voluptas quasi tenetur architecto ipsa veritatis nam? Nisi exercitationem nobis tempore perspiciatis similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi veniam ut molestiae, fugiat minus, odit, dignissimos suscipit voluptas quasi tenetur architecto ipsa veritatis nam? Nisi exercitationem nobis tempore perspiciatis similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi veniam ut molestiae, fugiat minus, odit, dignissimos suscipit voluptas quasi tenetur architecto ipsa veritatis nam? Nisi exercitationem nobis tempore perspiciatis similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi veniam ut molestiae, fugiat minus, odit, dignissimos suscipit voluptas quasi tenetur architecto ipsa veritatis nam? Nisi exercitationem nobis tempore perspiciatis similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi veniam ut molestiae, fugiat minus, odit, dignissimos suscipit voluptas quasi tenetur architecto ipsa veritatis nam? Nisi exercitationem nobis tempore perspiciatis similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi veniam ut molestiae, fugiat minus, odit, dignissimos suscipit voluptas quasi tenetur architecto ipsa veritatis nam? Nisi exercitationem nobis tempore perspiciatis similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi veniam ut molestiae, fugiat minus, odit, dignissimos suscipit voluptas quasi tenetur architecto ipsa veritatis nam? Nisi exercitationem nobis tempore perspiciatis similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi veniam ut molestiae, fugiat minus, odit, dignissimos suscipit voluptas quasi tenetur architecto ipsa veritatis nam? Nisi exercitationem nobis tempore perspiciatis similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi veniam ut molestiae, fugiat minus, odit, dignissimos suscipit voluptas quasi tenetur architecto ipsa veritatis nam? Nisi exercitationem nobis tempore perspiciatis similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi veniam ut molestiae, fugiat minus, odit, dignissimos suscipit voluptas quasi tenetur architecto ipsa veritatis nam? Nisi exercitationem nobis tempore perspiciatis similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi veniam ut molestiae, fugiat minus, odit, dignissimos suscipit voluptas quasi tenetur architecto ipsa veritatis nam? Nisi exercitationem nobis tempore perspiciatis similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi veniam ut molestiae, fugiat minus, odit, dignissimos suscipit voluptas quasi tenetur architecto ipsa veritatis nam? Nisi exercitationem nobis tempore perspiciatis similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi veniam ut molestiae, fugiat minus, odit, dignissimos suscipit voluptas quasi tenetur architecto ipsa veritatis nam? Nisi exercitationem nobis tempore perspiciatis similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi veniam ut molestiae, fugiat minus, odit, dignissimos suscipit voluptas quasi tenetur architecto ipsa veritatis nam? Nisi exercitationem nobis tempore perspiciatis similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi veniam ut molestiae, fugiat minus, odit, dignissimos suscipit voluptas quasi tenetur architecto ipsa veritatis nam? Nisi exercitationem nobis tempore perspiciatis similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi veniam ut molestiae, fugiat minus, odit, dignissimos suscipit voluptas quasi tenetur architecto ipsa veritatis nam? Nisi exercitationem nobis tempore perspiciatis similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi veniam ut molestiae, fugiat minus, odit, dignissimos suscipit voluptas quasi tenetur architecto ipsa veritatis nam? Nisi exercitationem nobis tempore perspiciatis similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi veniam ut molestiae, fugiat minus, odit, dignissimos suscipit voluptas quasi tenetur architecto ipsa veritatis nam? Nisi exercitationem nobis tempore perspiciatis similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi veniam ut molestiae, fugiat minus, odit, dignissimos suscipit voluptas quasi tenetur architecto ipsa veritatis nam? Nisi exercitationem nobis tempore perspiciatis similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi veniam ut molestiae, fugiat minus, odit, dignissimos suscipit voluptas quasi tenetur architecto ipsa veritatis nam? Nisi exercitationem nobis tempore perspiciatis similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi veniam ut molestiae, fugiat minus, odit, dignissimos suscipit voluptas quasi tenetur architecto ipsa veritatis nam? Nisi exercitationem nobis tempore perspiciatis similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi veniam ut molestiae, fugiat minus, odit, dignissimos suscipit voluptas quasi tenetur architecto ipsa veritatis nam? Nisi exercitationem nobis tempore perspiciatis similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi veniam ut molestiae, fugiat minus, odit, dignissimos suscipit voluptas quasi tenetur architecto ipsa veritatis nam? Nisi exercitationem nobis tempore perspiciatis similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi veniam ut molestiae, fugiat minus, odit, dignissimos suscipit voluptas quasi tenetur architecto ipsa veritatis nam? Nisi exercitationem nobis tempore perspiciatis similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi veniam ut molestiae, fugiat minus, odit, dignissimos suscipit voluptas quasi tenetur architecto ipsa veritatis nam? Nisi exercitationem nobis tempore perspiciatis similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi veniam ut molestiae, fugiat minus, odit, dignissimos suscipit voluptas quasi tenetur architecto ipsa veritatis nam? Nisi exercitationem nobis tempore perspiciatis similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi veniam ut molestiae, fugiat minus, odit, dignissimos suscipit voluptas quasi tenetur architecto ipsa veritatis nam? Nisi exercitationem nobis tempore perspiciatis similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi veniam ut molestiae, fugiat minus, odit, dignissimos suscipit voluptas quasi tenetur architecto ipsa veritatis nam? Nisi exercitationem nobis tempore perspiciatis similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi veniam ut molestiae, fugiat minus, odit, dignissimos suscipit voluptas quasi tenetur architecto ipsa veritatis nam? Nisi exercitationem nobis tempore perspiciatis similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi veniam ut molestiae, fugiat minus, odit, dignissimos suscipit voluptas quasi tenetur architecto ipsa veritatis nam? Nisi exercitationem nobis tempore perspiciatis similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi veniam ut molestiae, fugiat minus, odit, dignissimos suscipit voluptas quasi tenetur architecto ipsa veritatis nam? Nisi exercitationem nobis tempore perspiciatis similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi veniam ut molestiae, fugiat minus, odit, dignissimos suscipit voluptas quasi tenetur architecto ipsa veritatis nam? Nisi exercitationem nobis tempore perspiciatis similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi veniam ut molestiae, fugiat minus, odit, dignissimos suscipit voluptas quasi tenetur architecto ipsa veritatis nam? Nisi exercitationem nobis tempore perspiciatis similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi veniam ut molestiae, fugiat minus, odit, dignissimos suscipit voluptas quasi tenetur architecto ipsa veritatis nam? Nisi exercitationem nobis tempore perspiciatis similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi veniam ut molestiae, fugiat minus, odit, dignissimos suscipit voluptas quasi tenetur architecto ipsa veritatis nam? Nisi exercitationem nobis tempore perspiciatis similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi veniam ut molestiae, fugiat minus, odit, dignissimos suscipit voluptas quasi tenetur architecto ipsa veritatis nam? Nisi exercitationem nobis tempore perspiciatis similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi veniam ut molestiae, fugiat minus, odit, dignissimos suscipit voluptas quasi tenetur architecto ipsa veritatis nam? Nisi exercitationem nobis tempore perspiciatis similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi veniam ut molestiae, fugiat minus, odit, dignissimos suscipit voluptas quasi tenetur architecto ipsa veritatis nam? Nisi exercitationem nobis tempore perspiciatis similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi veniam ut molestiae, fugiat minus, odit, dignissimos suscipit voluptas quasi tenetur architecto ipsa veritatis nam? Nisi exercitationem nobis tempore perspiciatis similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi veniam ut molestiae, fugiat minus, odit, dignissimos suscipit voluptas quasi tenetur architecto ipsa veritatis nam? Nisi exercitationem nobis tempore perspiciatis similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi veniam ut molestiae, fugiat minus, odit, dignissimos suscipit voluptas quasi tenetur architecto ipsa veritatis nam? Nisi exercitationem nobis tempore perspiciatis similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi veniam ut molestiae, fugiat minus, odit, dignissimos suscipit voluptas quasi tenetur architecto ipsa veritatis nam? Nisi exercitationem nobis tempore perspiciatis similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi veniam ut molestiae, fugiat minus, odit, dignissimos suscipit voluptas quasi tenetur architecto ipsa veritatis nam? Nisi exercitationem nobis tempore perspiciatis similique.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi veniam ut molestiae, fugiat minus, odit, dignissimos suscipit voluptas quasi tenetur architecto ipsa veritatis nam? Nisi exercitationem nobis tempore perspiciatis similique.</p>
+  </body>
+</html>

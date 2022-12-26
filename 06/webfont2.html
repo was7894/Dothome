@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- 보통 폰트 링크는 title바로 아래 링크를 적는다. -->
+    <!-- 왠만하면 @import방식보단 link방식을 쓰는 걸 추천! -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Special+Elite&display=swap" rel="stylesheet" />
+
+    <style>
+      /* 눈누폰트적용 */
+      @font-face {
+        font-family: "PuradakGentleGothicR";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.1/PuradakGentleGothicR.woff2") format("woff2");
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      @font-face {
+        font-family: "TTCrownMychewR";
+        src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/TTCrownMychewR.woff2") format("woff2");
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      /* 구글폰트적용 */
+      .g-font {
+        font-family: "Lilita One", cursive;
+        font-family: "Special Elite", cursive;
+      }
+      /* 눈누폰트적용 */
+      .p-font {
+        font-family: "PuradakGentleGothicR";
+      }
+
+      .m-font {
+        font-family: "TTCrownMychewR";
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      <!-- 구글폰트 -->
+      <p class="g-font">
+        [google font] only ENGLISH Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam fugit praesentium, perferendis, accusantium qui incidunt quisquam eligendi autem soluta possimus, maiores magni sint. Atque deleniti reiciendis eveniet delectus officiis consequuntur.
+      </p>
+    </h1>
+    <!-- 눈누 폰트 -->
+    <h1>
+      <p class="p-font">[PURADAK 푸라닭 폰트 적용] Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas eum aut aspernatur suscipit perspiciatis incidunt atque magni? Quae facilis similique ea ipsum aliquid vitae animi. Accusamus voluptatem necessitatibus adipisci dicta!</p>
+    </h1>
+
+    <h1>
+      <p class="m-font">[마이쮸체] Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas eum aut aspernatur suscipit perspiciatis incidunt atque magni? Quae facilis similique ea ipsum aliquid vitae animi. Accusamus voluptatem necessitatibus adipisci dicta!</p>
+    </h1>
+  </body>
+</html>

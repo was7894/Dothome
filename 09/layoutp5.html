@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css" />
+    <style>
+      body {
+        background-color: #7a480a;
+      }
+      .wrap {
+        /* wrap가운데 정렬하기위해 margin값을 왼오 auto로 줌 */
+        margin: 50px auto;
+        width: 1000px;
+        height: 900px;
+        text-align: center;
+        font-size: 40px;
+        color: black;
+        /* background-color: #c8e6c9; */
+      }
+      header {
+        background-color: #fff7d7;
+        width: 1000px;
+        height: 100px;
+      }
+      nav {
+        background-color: #ffedaf;
+        height: 100px;
+      }
+
+      /* side */
+      .cf > .fl {
+        background-color: #ffe087;
+        width: 300px;
+        height: 600px;
+      }
+
+      /* 컨텐츠 너비 */
+      .cf > .fl + .fl {
+        width: 700px;
+      }
+
+      /* 컨텐츠1 */
+      .cf > .fl + .fl > div {
+        background-color: #ffd469;
+        height: 300px;
+      }
+
+      /* 컨텐츠2 */
+      .cf > .fl + .fl > div + div {
+        background-color: #ffc038;
+        height: 300px;
+      }
+
+      /* section {
+        width: 800px;
+        height: 600px;
+        background-color: #ff3e28;
+      } */
+
+      /* article {
+        background-color: #6690ff;
+        height: 300px;
+        width: 700px;
+      } */
+
+      footer {
+        background-color: #b77c1c;
+        height: 100px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <header>header</header>
+      <nav>nav</nav>
+      <section class="cf">
+        <aside class="fl">side</aside>
+        <!-- 같이묶어버림으로써 같이 올라감 -->
+        <article class="fl">
+          <div>contents1</div>
+          <div>contents2</div>
+        </article>
+      </section>
+
+      <footer>footer</footer>
+    </div>
+  </body>
+</html>

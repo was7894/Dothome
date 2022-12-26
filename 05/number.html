@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<title>number-range 04파일</title>
+		<style type="text/css">
+			
+		</style>
+	</head>
+	
+	<body>
+		<form action="#" method="post"></form>
+			<fieldset>
+				<legend>등록정보</legend>
+				<!-- 보통 p,li태그로만듦 -->
+					<ul>
+						<!-- label.reg -->
+						<li>
+							<label for="member" class="reg"><small>참여인원(최대10명)</small></label>
+							<!-- only 숫자만 스피너 생김 -->
+							<!-- 최대,최소값 지정 -->
+							<!-- step 스피너 조정시 증감 단위 값 -->
+							<!-- db 데이터 전송되는 값은 value값으로 전송 -->
+							<input type="number" max="10" min="0" step="2" value="10"/>
+						</li>
+						
+					</ul>
+			</fieldset>
+	</body>
+</html>

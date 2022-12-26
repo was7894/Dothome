@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+/* body id =100점*/
+#bgPage1{
+  background: black;
+  color : red;
+}
+
+/* id+class = 110점 */
+#bgPage1.bgPage2{
+  color:green;
+}
+
+/* body class = 10점짜리 */
+.bgPage2{
+  color: yellow;
+}
+
+/* span class*/
+.blueText{
+  color: blue;
+}

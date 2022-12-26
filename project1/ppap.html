@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <style>
+      ul,
+      li {
+        list-style-type: none;
+      }
+      a {
+        text-decoration: none;
+      }
+
+      .wrap .dep1 {
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .dep1 > li {
+        margin: 10px 10px;
+      }
+      .dep1 > li > a {
+        padding: 10px;
+      }
+      .dep1 > li:hover .dep2 {
+        display: block;
+      }
+      .dep2 {
+        display: none;
+      }
+      .dep2 > li > a {
+        color: red;
+      }
+      .dep1 > li .dep2 > li > a:hover {
+        background-color: red;
+        color: white;
+      }
+      .dep3 > li > a {
+        color: gray;
+      }
+      .dep1 > li .dep2 > li .dep3 li:hover a {
+        text-decoration: underline;
+        color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <ul class="dep1">
+        <li>
+          <a href="#none">menu1</a>
+          <ul class="dep2">
+            <li>
+              <a href="#none">m1-1</a>
+              <ul class="dep3">
+                <li><a href="#none">m1-1-1</a></li>
+                <li><a href="#none">m1-1-2</a></li>
+                <li><a href="#none">m1-1-3</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#none">m1-2</a>
+              <ul class="dep3">
+                <li><a href="#none">m1-2-1</a></li>
+                <li><a href="#none">m1-2-2</a></li>
+                <li><a href="#none">m1-2-3</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#none">m1-3</a>
+              <ul class="dep3">
+                <li><a href="#none">m1-3-1</a></li>
+                <li><a href="#none">m1-3-2</a></li>
+                <li><a href="#none">m1-3-3</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#none">menu2</a>
+          <ul class="dep2">
+            <li>
+              <a href="#none">m2-1</a>
+              <ul class="dep3">
+                <li><a href="#none">m2-1-1</a></li>
+                <li><a href="#none">m2-1-2</a></li>
+                <li><a href="#none">m2-1-3</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#none">m2-2</a>
+              <ul class="dep3">
+                <li><a href="#none">m2-2-1</a></li>
+                <li><a href="#none">m2-2-2</a></li>
+                <li><a href="#none">m2-2-3</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#none">m2-3</a>
+              <ul class="dep3">
+                <li><a href="#none">m2-3-1</a></li>
+                <li><a href="#none">m2-3-2</a></li>
+                <li><a href="#none">m2-3-3</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#none">menu3</a>
+          <ul class="dep2">
+            <li>
+              <a href="#none">m3-1</a>
+              <ul class="dep3">
+                <li><a href="#none">m3-1-1</a></li>
+                <li><a href="#none">m3-1-2</a></li>
+                <li><a href="#none">m3-1-3</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#none">m3-2</a>
+              <ul class="dep3">
+                <li><a href="#none">m3-2-1</a></li>
+                <li><a href="#none">m3-2-2</a></li>
+                <li><a href="#none">m3-2-3</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#none">m3-3</a>
+              <ul class="dep3">
+                <li><a href="#none">m3-3-1</a></li>
+                <li><a href="#none">m3-3-2</a></li>
+                <li><a href="#none">m3-3-3</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#none">menu4</a>
+          <ul class="dep2">
+            <li>
+              <a href="#none">m4-1</a>
+              <ul class="dep3">
+                <li><a href="#none">m4-1-1</a></li>
+                <li><a href="#none">m4-1-2</a></li>
+                <li><a href="#none">m4-1-3</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#none">m4-2</a>
+              <ul class="dep3">
+                <li><a href="#none">m4-2-1</a></li>
+                <li><a href="#none">m4-2-2</a></li>
+                <li><a href="#none">m4-2-3</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#none">m4-3</a>
+              <ul class="dep3">
+                <li><a href="#none">m4-3-1</a></li>
+                <li><a href="#none">m4-3-2</a></li>
+                <li><a href="#none">m4-3-3</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* caniuse에 flex속성 되나 확인하기 */
+      .container {
+        background-color: beige;
+        height: 100vh;
+        /* flexbox */
+        display: flex;
+
+        /* 왼오 */
+        flex-direction: row;
+
+        /* 오왼 */
+        flex-direction: row-reverse;
+
+        /* 위에서 아래 */
+        flex-direction: column;
+
+        /* 아래에서 위 */
+        flex-direction: column-reverse;
+
+        /* 기본값. 창이 축소되도 붙어있음 */
+        flex-wrap: nowrap;
+
+        /* 창이축소되면 다음라인으로 */
+        flex-wrap: wrap;
+
+        /* 축약속성 */
+        flex-flow: row nowrap;
+
+        /* 중심축에서 어떻게 아이템들의 배치 */
+        justify-content: space-evenly;
+
+        /* 반대축에서 아이템들의 배치 */
+        align-items: center;
+        align-content: center;
+      }
+
+      .item {
+        width: 40px;
+        height: 40px;
+        border: 1px solid black;
+      }
+      .item1 {
+        background-color: red;
+        /* 창 커지면 늘어남. 단위는 배수임 */
+        flex-grow: 1;
+      }
+      .item2 {
+        background-color: rgb(163, 142, 142);
+        /* 창이줄어들면 더 줄어듬. */
+        flex-shrink: 1;
+      }
+      .item3 {
+        background-color: rgb(92, 202, 92);
+        flex-basis: 40%;
+      }
+      .item4 {
+        background-color: rgb(0, 76, 255);
+      }
+      .item5 {
+        background-color: rgb(255, 247, 0);
+      }
+      .item6 {
+        background-color: rgb(255, 0, 195);
+      }
+      .item7 {
+        background-color: rgb(68, 0, 255);
+      }
+      .item8 {
+        background-color: rgb(255, 0, 98);
+      }
+      .item9 {
+        background-color: rgb(0, 255, 251);
+      }
+      .item10 {
+        background-color: rgb(0, 255, 42);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item item1">1</div>
+      <div class="item item2">2</div>
+      <div class="item item3">3</div>
+      <div class="item item4">4</div>
+      <div class="item item5">5</div>
+      <div class="item item6">6</div>
+      <div class="item item7">7</div>
+      <div class="item item8">8</div>
+      <div class="item item9">9</div>
+      <div class="item item10">10</div>
+    </div>
+  </body>
+</html>

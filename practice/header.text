@@ -1,0 +1,13 @@
+<header>
+1.클래스 이름을 해더로 주고감싸고 전체적인 다음 큰 구조 그리고 텍스트 채워넣기
+2.css 초기화 먼저 시킨다. mptlc(margin, padding, text-decoration, list-style, color)
+3.전체적인 큰틀부터시작해서 세부적으로 하나씩 완성시킨다.
+
+tip) 익숙하지않은 것들.
+로고부분 윗 간격 padding-top,
+자간 letter-spacing
+폰트(한번에해결) font:bold 12px 'arial'; //굵기, 크기, 글씨체.
+
+4.왠만하면 flex로 왼쪽정렬하고 center로 가운데 맞춰라
+5.a태그들의 클릭영역을 늘리기위해 padding으로 조금 간격을 넓히고 많이 넓히고 싶을때는 li에 마진을줘서 넓혀라.
+6.전체적인 틀을 움직이고싶으면 ul에 margin을 줘라.

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<title>number-range 04파일 input type number, range</title>
+		<style type="text/css">
+			
+		</style>
+	</head>
+	
+	<body>
+		<form action="#" method="post"></form>
+			<fieldset>
+				<legend>등록정보</legend>
+				<!-- 보통 p,li태그로만듦 -->
+					<ul>
+						<!-- label.reg -->
+						<li>
+							<label for="member" class="reg"><small>참여인원(최대10명)</small></label>
+							<!-- only 숫자만 스피너 생김 -->
+							<!-- 최대,최소값 지정 -->
+							<!-- step 스피너 조정시 증감 단위 값 -->
+							<!-- db 데이터 전송되는 값은 value값으로 전송 -->
+							<input type="number" max="10" min="1" step="2" value="1" id="number"/>
+						</li>
+	
+						<!-- label.reg -->
+						<li>
+							<label for="stuff" class="reg">지원물품<small>(1인당5개)</small></label>
+							<input type="number" max="50" min="1" step="5" value="1" id="stuff"/>
+						</li>
+						<li>
+							<label for="satis" class="reg">희망단계<small>(하,중,상)</small></label>
+							<!-- type 슬라이더 min max 3단계로 주어 상중하로 할수 있음. -->
+							<input type="range" max="3" min="1" value="0" id="satis"/>
+						</li>
+						
+					</ul>
+			</fieldset>
+	</body>
+</html>

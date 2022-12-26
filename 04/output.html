@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>계산</title>
+  </head>
+
+  <body>
+    <!-- 폼 태그 요소 oninput 
+		: 사용자가 폼 태그에 입력하거나 값이 변경되면 실행 -->
+    <!-- result라는 걸 자바 스크립트에 태그에 벨류값을 읽어 들일 수 있는 -->
+    <!-- 문자일때 + 연산이 아니라 연속적이게 출력 -->
+    <!-- parseInt() 문자값을 숫자로 변환 -->
+    <form oninput="result.value = parseInt(num1.value) + parseInt(num2.value)">
+      <!-- *name 전송값. -->
+      <input type="number" name="num1" value="0" />+ <input type="number" name="num2" value="0" />=
+      <output name="result" for="num" value="3"></output>
+    </form>
+  </body>
+</html>

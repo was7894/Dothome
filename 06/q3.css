@@ -1,0 +1,22 @@
+.container {
+  border: 3px solid #ddd;
+  width: 790px;
+  overflow: hidden;
+}
+img {
+  float: left;
+  margin: 25px;
+}
+
+.text {
+  margin: 23px;
+}
+
+p {
+  line-height: 23px;
+}
+
+.red_bold {
+  font-weight: bold;
+  color: red;
+}

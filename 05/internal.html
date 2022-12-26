@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>인터널, 익스터널, 인라인방식</title>
+    <meta charset="utf-8" >
+    <!-- 익스터널방식 = 헤드태그 영역내부에 link태그로 작성 (웹표준방식) -->
+    <!-- href : 파일경로 -->
+    <link rel="stylesheet" href="css/style.css" >
+
+    <style>
+      /* 인터널 방식 = 헤드태그사이에 스타일태그작성 */
+      section {
+        width: 500px;
+        border: 5px solid gray;
+        padding: 15px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="container">
+      <!-- 자기 소개 -->
+      <section>
+        <h2>Who am I?</h2>
+        <p>
+          프런트 엔드 웹 기술(Front-end Web Tech.)에 관심이 많습니다.<br />
+          현재 제주의 한 시골 마을에서 코딩 중입니다.
+        </p>
+      </section>
+    </div>
+
+    <div id="container2">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sit quis maiores? Quisquam quo voluptatum, porro distinctio consectetur sunt fuga ad aliquid, doloribus debitis veritatis autem natus amet! Necessitatibus, autem!</p>
+      <!-- 태그안에 style속성을 사용해서 작성하는 인라인 방식 -->
+      <p style="color: blue">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sit quis maiores? Quisquam quo voluptatum, porro distinctio consectetur sunt fuga ad aliquid, doloribus debitis veritatis autem natus amet! Necessitatibus, autem!</p>
+    </div>
+  </body>
+</html>

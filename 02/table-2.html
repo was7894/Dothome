@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<title>table-1.html</title>
+		<style type="text/css">
+		table, th, td{border:1px solid #ccc;}
+		th{padding;15px;}
+		tr>td:nth-child(odd){width:120px;}
+		tr>td:nth-child(even){width:120px;}
+		</style>
+	</head>
+	<body>
+		<table>
+			<tr>
+				<th>이름</th>
+				<td></td>
+				<!-- ctrl+d -->
+				<th>연락처</th>
+				<td></td>
+			</tr>
+			<tr>
+				<th>주소</th>
+				<td colspan="3"></td>
+				<!-- <th></th>
+				<td></td> -->
+			</tr>
+			<tr>
+				<th>이름</th>
+				<td colspan="3"></td>
+				<!-- <th></th>
+				<td></td> -->
+			</tr>
+			
+		</table>
+		<hr width = "100%" color = "green" size = "2">
+			
+		<ul>
+			<li>컨트롤+d 태이블 행 복사</li>
+			<li>세로선없애려면 선없애는 개수는 n+1로 적어라. 그리고 아래 것은 지워라. ex) &lt;td colspan="3"/td&gt;</li>
+			<li>너비조정 ex)style tag 안&nbsp;<span>tr>td:nth-child(odd){width:100px;height:50px;}
+			tr>td:nth-child(even){width:100px; height:50px;}</span></li>
+				
+		</ul>
+
+	</body>
+</html>

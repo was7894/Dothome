@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+	<body>
+		<form action="#" method="post">
+			<fieldset>
+				<legend>신청과목</legend>
+				<p>이 달에 신청할 과목을 선택하세요(1과목만 가능)</p>
+				<!-- 라디오 타입은 단일속성이니 name을 같게해라!!!!! -->
+				<label ><input type="radio" name="op1" value="speaking" />회화</label>
+				<label ><input type="radio" name="op1" value="gram"/>문법</label>
+				<!-- 마지막 checked속성 쓰면 처음 선택이된 상태임. -->
+				<label ><input type="radio" name="op1" value="writing" checked/>작문</label>
+				
+			</fieldset>
+			
+			<fieldset>
+				<legend>메일링</legend>
+				<p>메일로 받고 싶은 뉴스 주제를 선택해 주세요(복수선택가능)</p>
+				<label><input type="checkbox" name="mailing1" />해외 단신</label>
+				<label><input type="checkbox" name="mailing2" />5분회화</label>
+				<label><input type="checkbox" name="mailing3" />모닝뉴스</label>
+				
+			</fieldset>
+			
+			
+			<!-- 단축키 ctrl+h로 ridio를 checkbox로 바꾸기 -->
+			<fieldset>
+				<legend>신청과목</legend>
+				<p>이 달에 신청할 과목을 선택하세요(1과목만 가능)</p>
+				<!-- 라디오 타입은 단일속성이니 name을 같게해라!!!!! -->
+				<label >
+					<input type="checkbox" name="op1" value="speaking" />회화
+				</label>
+				
+				<label >
+					<input type="checkbox" name="op1" value="gram"/>문법
+				</label>
+				
+				<!-- 마지막 checked속성 쓰면 처음 선택이된 상태임. -->
+				<label >
+					<input type="checkbox" name="op1" value="writing" checked/>작문
+				</label>
+				
+			</fieldset>
+			
+			
+			
+			<!-- input type color -->
+			<fieldset>
+				<legend>반티 색상 설문 조사</legend>
+				<p>올해 반티를 만들려고 합니다. 원하는 색상 추천</p>
+				<label >
+					<input type="color" name="color" value="#00ff00"/>
+				</label>
+			</fieldset>
+			
+			
+			<!-- input type date -->
+			<fieldset>
+				<legend>날짜선택</legend>
+				<label>
+					<input type="date"/>
+				</label>
+			</fieldset>
+			
+			<!-- input type time -->
+			<fieldset>
+				<legend>대관 시간 선택(오늘)</legend>
+					<label >시작시간
+						<input type="time" value="09:00" name="start" id="start"/>
+					
+					</label>
+					
+					<label >종료시간
+						<input type="time" value="18:00" name="end" id="end"/>
+					</label>
+			</fieldset>
+		</form>
+	</body>
+</html>

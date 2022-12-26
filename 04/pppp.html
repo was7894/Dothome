@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      ul {
+        list-style: none;
+      }
+      fieldset {
+        width: 60%;
+        margin-left: 180px; /*auto 넣어도됨*/
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>여름방학특강신청</h2>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>수강과목</legend>
+        <label>영어회화초급<input type="text" value="오전 900~1100" /></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>신청자</legend>
+        <ul>
+          <li>
+            <label>이름<input type="text" /></label>
+          </li>
+          <li>
+            <label>학번<input type="text" placeholder="하이픈 없이 입력" required maxlength="8" /></label>
+          </li>
+          <!--  name:서버 id: label과 연결-->
+          <li>
+            <label for="sub">학과</label>
+            <!-- 선택옵션버튼 input 대신 select태그 -->
+            <select name="sub" id="SUB">
+              <option value="com">컴공</option>
+              <option value="history">역사</option>
+              <option value="math">수학</option>
+            </select>
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset>
+        <legend>신청자</legend>
+        <ul>
+          <li>
+            <label for="boo">교재</label>
+            <input type="number" id="boo" name="book" min="0" max="10" value="1" />
+          </li>
+          <li>
+            <label for="wor">워크시트</label>
+            <input type="number" id="wor" name="work" min="0" max="10" value="1" />
+          </li>
+          <li>
+            <!-- step요소 숫자단위로 가감 -->
+            <label for="man">단체주문</label>
+            <input type="number" id="man" name="many" min="0" max="10" value="10" step="10" />
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <button type="submit">신청하기</button>
+        <button type="reset">다시쓰기</button>
+      </fieldset>
+    </form>
+
+    <!-- 1.id는 라벨과 연결하기위해 name은 서버로 값을 주기위해 -->
+  </body>
+</html>

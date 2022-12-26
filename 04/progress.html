@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <form action="#" method="post">
+      <label>10초남음(초단위)</label>
+      <progress max="60" value="50"></progress>
+      <br />
+      <label>진행률 30%(퍼센트단위)</label>
+      <progress max="100" value="30"></progress>
+    </form>
+
+    <h1>progressJS 다운로드 점진적으로 채워지는 것 만들기</h1>
+    <form action="">
+      <input type="button" value="다운로드시작" onclick="dwn()" />
+      <progress id="bar" value="0" max="100"></progress>
+    </form>
+
+    <script>
+      function dwn() {
+        //변해야하는 값들을 변수에 저장
+        var bar = document.getElementById("bar"); //아이디 bar를 get
+        var loaded = 0; //초기값
+        var load = function () {
+          loaded = loaded + 5;
+          bar.value = loaded;
+          console.log(loaded);
+          if (loaded == 100) {
+            clearInterval(dummyLoad);
+            /*setInterval 취소 -> clearInterval*/
+          }
+        };
+        // 일정시간마다 인터벌을 설정 setInterval(할일, 시간)
+        var dummyLoad = setInterval(function () {
+          load();
+        }, 500);
+      }
+    </script>
+  </body>
+</html>

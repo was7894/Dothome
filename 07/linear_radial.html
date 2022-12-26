@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 500px;
+        height: 300px;
+        /* 반지름길이 10px */
+        border-radius: 10px;
+      }
+
+      /* 1)선형그라데이션 */
+      /* to 끝나는부분방향(각도써도됨), 시작색, 끝나는색*/
+      .grad1 {
+        /* css3 미지원브라우저를위해 씀. */
+        background: blue;
+
+        background: linear-gradient(to right top, blue, rgb(144, 213, 144));
+        /* background: linear-gradient(60deg, blue, green); */
+      }
+
+      /* 2)타원형그라데이션 */
+      /* 중심으로부터 흰 노랑 빨강으로변하는 */
+      .grad2 {
+        background: blue;
+
+        background: radial-gradient(green, yellow, red);
+
+        /* 중심방향지정 */
+        /* background: radial-gradient(at 30% 20%, green, yellow, red); */
+
+        /* 완전원형 */
+        /* background: radial-gradient(circle, green, yellow, red); */
+      }
+      /* 높이만큼 반복. 위에서부터 아래색순으로*/
+      .grad3 {
+        background: repeating-linear-gradient(yellow, green 150px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grad1"></div>
+    <div class="grad2"></div>
+    <div class="grad3"></div>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>table color</title>
+	<style type="text/css">
+		table, th, td{border:1px solid #ddd;}
+		<!-- th,td{padding;15px;}
+		thead,tfoot{background:#dddddd;} -->
+		tr>td:nth-child(odd){width:100px;height:50px;}
+		tr>td:nth-child(even){width:100px; height:50px;}
+	</style>
+</head>
+<body>
+	<table>
+		<caption>colgroup 연습</caption>
+		<colgroup>
+		<col style="background:pink"/>
+		<col span="2" style="background:blue"/>
+		<col style="background:red"/>
+		</colgroup>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+
+		</table>
+		<hr width = "100%" color = "green" size = "2">
+		<span>table태그안<br/>
+			&lt;colgroup&gt;<br/>
+			&lt;col style="background:pink"/&gt;<br/>
+			&lt;col span="2" style="background:blue"/&gt;<br/>
+			&lt;col style="background:red"/&gt;<br/>
+			&lt;/colgroup&gt;<br/>
+		</span>
+		
+	</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css" />
+    <style>
+      .star {
+        margin: 30px auto;
+        /* position: relative; */
+        width: 500px;
+        height: 0;
+      }
+
+      .star1 {
+        position: relative;
+        border-top: 250px solid transparent;
+        border-right: 250px solid transparent;
+        /* 정삼각형 calc(1.732*npx) */
+        border-bottom: calc(250px * 1.732) solid gold;
+        border-left: 250px solid transparent;
+        /* bottom: 125px; */
+      }
+
+      .star1::after {
+        content: "";
+        position: absolute;
+        border-top: calc(250px * 1.732) solid gold;
+        border-right: 250px solid transparent;
+        border-bottom: 250px solid transparent;
+        border-left: 250px solid transparent;
+        right: -250px;
+        top: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="star">
+      <div class="star1"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        border: 1px solid;
+      }
+      div {
+        padding: 100px;
+        width: 800px;
+        height: 500px;
+        border: 20px solid red;
+        background: url(./images/apple-bg.jpg) no-repeat pink;
+
+        background-size: 600px auto;
+      }
+      .a {
+        background-origin: border-box;
+        background-clip: border-box;
+      }
+
+      .b {
+        background-origin: padding-box;
+        background-clip: padding-box;
+      }
+
+      .c {
+        background-origin: content-box;
+        background-clip: content-box;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="a">aa</div>
+    <div class="b">bb</div>
+    <div class="c">cc</div>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .triangle {
+        position: relative;
+        width: 0;
+        height: 0;
+      }
+
+      #triangle1 {
+        /* 위아래중하나 왼오중 하나를 써야 뜸 */
+        /* border-top: 100px solid green; */
+        border-right: 100px solid blue;
+        border-bottom: 100px solid pink;
+        /* border-left: 100px solid red; */
+      }
+
+      #triangle2 {
+        /* 위아래중하나 왼오중 하나를 써야 뜸 */
+        /* border-top: 100px solid green; */
+        border-right: 100px solid transparent;
+        border-bottom: 100px solid pink;
+        /* border-left: 100px solid red; */
+      }
+
+      #triangle3 {
+        /* 위아래중하나 왼오중 하나를 써야 뜸 */
+        border-top: 50px solid green;
+        border-right: 50px solid blue;
+        border-bottom: 50px solid pink;
+        border-left: 50px solid red;
+      }
+
+      #triangle4 {
+        /* 위아래중하나 왼오중 하나를 써야 뜸 */
+
+        position: absolute;
+        top: 600px;
+        left: 400px;
+        border-top: 100px solid green;
+        /* border-right: 100px solid transparent; */
+        /* border-bottom: 100px solid pink; */
+        border-left: 100px solid transparent;
+        transform: rotate(80deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="triangle">
+      <div id="triangle1"></div>
+      <div id="triangle2"></div>
+      <div id="triangle3"></div>
+      <div id="triangle4"></div>
+    </div>
+  </body>
+</html>

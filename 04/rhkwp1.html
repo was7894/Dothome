@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <form action="#" method="post">
+      <!-- 속성과 특성! -->
+      <input type="text" for="id_" placeholder="아이디입력" />
+      <br />
+      <br />
+
+      <!-- 그냥 한줄입력하는 text타입보다  여러줄 입력을 요할때 -->
+      <textarea name="Questions" id="que" cols="30" rows="10" placeholder="질문내용입력"></textarea>
+
+      <br />
+      <br />
+
+      <!-- span은 인라인요소라 p태그나 div태그 같이  줄바꿈을 하지 않는다. -->
+      <span>취미:</span>
+      <input type="checkbox" id="fav" name="FAVO" checked />
+      <label for="fav">낚시</label>
+      <input type="checkbox" id="boo" name="BOOK" />
+      <label for="boo">독서</label>
+      <input type="checkbox" id="exc" name="EXER" checked />
+      <label for="exe">운동</label>
+
+      <br />
+      <br />
+      <span>특기:</span>
+      <label><input type="radio" name="specialty" />댄스</label>
+      <label><input type="radio" name="specialty" checked />코노</label>
+      <label><input type="radio" name="specialty" />게임</label>
+    </form>
+  </body>
+</html>

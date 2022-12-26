@@ -1,0 +1,71 @@
+.m_width { max-width:1400px; margin:0 auto; } 
+/* 상단메뉴바 */
+#header { width:100%; } 
+#lnb { width:100%; height:94px; background: #ffffff; position:relative; } 
+#nav li { height: auto; margin: 0 38px; } 
+#nav li>a { display: block; color:#333333; line-height: 94px; text-align: center; font-size: 1.2em; font-weight: bold; } 
+#nav li a:hover { color:#e95a65; } 
+#nav li#freesamLogo { width:181px; margin:0 0 0 25px; } 
+#nav li .m_width .m1_tit { padding:0 20px 0 0; } 
+#nav li .m_width .m1_tit img { display:block; margin:20px auto; width:135px; height:135px; } 
+
+
+
+#nav li div.width100 { position: absolute; 
+  top:94px; 
+  left:0px; 
+  background: #d8d8d8; 
+  width:100%; 
+  border-bottom:1px solid transparent; 
+  box-shadow: 0 0 0 rgba(0,0,0,.0); 
+  height:0px; 
+  overflow: hidden; 
+  padding: 0 0; 
+  transition: all 0.5s;
+ } 
+
+ /*  */
+/* 패딩값으로 트랜지션을 적용 */
+#nav li:hover div.width100 { 
+  height:auto; 
+  padding:20px 0; 
+  border-bottom:1px solid #afaeb5; 
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.3); 
+} 
+
+/* 색깔 반반 */
+#nav .width100::before { 
+  content:'';
+  position:absolute;
+  background-color: green;
+  width:100%;
+  height:100%;
+  right:80%;
+  /* right:calc(80%+30rem); */
+  /* z-index:-1; */
+} 
+
+.main_banner{
+  background:url(https://img.freepik.com/free-photo/water-texture-background-pastel-blue-design_53876-146663.jpg?w=900&t=st=1670576880~exp=1670577480~hmac=4f5048f077f0ff265157dc4cd11f5683a944507cf32d79cf1bd676357c92d6fb) no-repeat;
+  background-size:cover;
+  height:100vh;
+}
+
+.main_banner ul{
+  width:600px;
+  height:200px;
+  margin:auto;
+  position:relative;
+  top:50vh;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+
+.main_banner li{
+  width:33%;
+  height:100%;
+  background-color: rgb(255,255,255/50%);
+  text-align: center;
+  font-size:2em;
+}
+

@@ -1,0 +1,112 @@
+@charset "utf-8";
+/* 구글폰트에서 가져옴 */
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Noto+Sans+KR:wght@100;300&display=swap');
+
+/* 여백초기화 */
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* a링크초기화 */
+a{
+  text-decoration: none;
+  color:#222;
+}
+a:hover{
+  color:#000;
+}
+
+/* 반응형 */
+html{
+  /* 10단위로하기위해 기본폰트 16px인데 곱하면 10px이됨 1em쓸때 계산이 편해짐  */
+  /* 16px 과 62.5를 곱하면 =10px; %를써야 가변적으로 변함*/
+  font-size: 62.5%;
+
+  /* 가로 스크롤 숨김 */
+  overflow-x:hidden;
+  /* y스크롤 만듦 컨텐츠가 없어도 무조건 만들어놓고 가야됨*/
+  overflow-y:scroll;
+}
+
+/* 폰트초기화 */
+/* 애플 산돌고딕체 */
+body, input, textarea, select, button, table{
+  /* font-family: 'Nerko One', cursive; */
+  /* font-family: 'Noto Sans KR', sans-serif; */
+  font-family: 'Noto Sans KR', Roboto, AppleSDGothicNeo sans-serif; 
+  color: #222;
+  /* 행간 1.70가 최적화 */
+  line-height: 1.75;
+}
+
+/* 폰트스타일 초기화 */
+em, address{
+  font-style: normal;
+}
+
+/* 불릿기호없애기 */
+dl,
+ul,
+ol,
+li,
+menu{
+  list-style: none;;
+}
+
+/* 제목태그초기화 */
+/* 10px로 맞춰나서 1.3rem = 13px임 */
+h1,h2,h3,h4,h5,h6{
+  font-size: 1.3rem;
+  color:#222;
+  font-weight: normal;
+}
+
+/* 테두리초기화 두께, 선*/
+img, fieldset{
+  border:0 none;
+}
+
+/* 버튼 초기화 */
+button{
+  border:0;
+}
+
+/* float */
+.fl{
+  float: left;
+}
+.fr{
+  float:right;
+}
+
+/* 클리어픽스 */
+.cb{
+  clear:both;
+}
+.cf{
+  content:"";
+  display:block;
+  clear:both;
+}
+
+/* margin, padding */
+.mb10{
+  margin-bottom: 10px
+   !important;
+}
+.mb20{
+  margin-bottom: 20px !important;
+}
+.mb30{
+  margin-bottom: 30px !important;
+}
+.mb40{
+  margin-bottom: 40px !important;
+}
+.mb50{
+  margin-bottom: 40px !important;
+}
+.mb100{
+  margin-bottom: 100px !important;
+}

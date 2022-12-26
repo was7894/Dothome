@@ -1,0 +1,31 @@
+body{
+  font-family: "맑은 고딕","고딕","굴림";
+}
+#wrap{
+  width:80%; margin-right:auto; margin-left:auto;
+}
+header{background-color: #069; overflow:hidden;}
+header h1{width:40%; float:left; color:#fff;}
+header nav{width:50%; float:right;}
+nav ul{list-style: none;}
+/* 인라인요소는 너비와 높이를 가지는데 width height값은 가지지 못한다. */
+/* float주면 인라인을 블럭처럼 바꿔줌 */
+/* 인라인블럭은 옛날사람이 한다. ie8에서 호환x */
+nav ul li{display:inline; margin:15px; float:left;}
+nav ul li a{color:white; text-decoration: none;}
+
+section{border:5px solid #333; padding:5px; overflow:hidden;}
+
+section article{
+  background-image: url(./images/bg.png);
+  background-repeat: no-repeat;
+  padding-left: 30px;
+}
+section article dt{font-weight:bold; color:purple;}
+
+footer{
+  padding:30px;
+  text-align: center;
+  background-color: black;
+  color: white;
+}

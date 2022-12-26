@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<title>quiz-1 table</title>
+		<style type="text/css">
+			<!-- -->
+			table, th, td{border:1px solid ; border-collapse : collapse; width:500px;}
+			th{padding;15px;}
+			
+			tr>td:nth-child(odd){width:100px;}
+			tr>td:nth-child(even){width:100px;}
+			
+			thead,tfoot{background:#dddddd;}
+
+		</style>
+	</head>
+	<!-- table>(tr>(td*4)) -->
+	<body>
+		 <table border="1" width="250" height="100">
+			 <caption>레시피 재료</caption>
+			 <thead>
+				 <tr>
+					<th>재료</th>
+					<th>첨가량</th>
+					<th>48시간</th>
+					<th>대체재료</th>
+				</tr>
+			</thead>
+			
+			<tbody>
+				<tr>
+					<td rowspan="5">수상충</td>
+					<td>로즈마리</td>
+					<td>30g</td>
+					<td rowspan="3">정제수</td>
+				</tr>
+				
+			   
+				<tr>
+					<td>추출물</td>
+					<td>30g</td>
+					
+				</tr>
+				
+				<tr>
+					<td>증류수</td>
+					<td>90g</td>
+					
+				</tr>
+				<tr>
+					<td>폴리쿼터</td>
+					<td>1.5g</td>
+					<td>쟁탄걸</td>	 
+				</tr>
+				<tr>
+					<td>글리세린</td>
+					<td>10g</td>
+					<td>히아루론신 10g</td>	 
+				</tr>
+				<tr>
+					<td rowspan="3">계면활성제</td>
+					<td>글리세린</td>
+					<td>10g</td>
+					<td>히아루론신 10g</td>	 
+				</tr>
+				<tr>
+					<td>les</td>
+					<td>코코베타인</td>
+					<td>애플</td>	 
+				</tr>
+				<tr>
+					<td>180g</td>
+					<td>5g</td>
+					<td>10g</td>	 
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td colspan="4">좋은 향을 위해서면 엘라스틴향 사용 추천</td>
+								
+				</tr>
+			</tfoot>
+		
+		</table>
+	</body>
+	<!-- ******************************************************************* -->
+	<!-- colsapn, lowspan값을 주면 그값만큼 th td값을 빼야한다.. 처음에 그걸 몰라서 시간이 걸렸다ㅠ -->
+</html>
